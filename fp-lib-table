@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "rise_elp")(type "KiCad")(uri "${KIPRJMOD}/lib/rise_elp.pretty")(options "")(descr ""))
+  (lib (name "POWERDI5")(type "KiCad")(uri "${KIPRJMOD}/lib/POWERDI5.pretty")(options "")(descr ""))
+)

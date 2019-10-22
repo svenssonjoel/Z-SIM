@@ -2,4 +2,5 @@
   (lib (name "rise_elp")(type "Legacy")(uri "${KIPRJMOD}/lib/rise_elp.lib")(options "")(descr ""))
   (lib (name "TPS54561DPRR")(type "Legacy")(uri "${KIPRJMOD}/lib/TPS54561DPRR.lib")(options "")(descr ""))
   (lib (name "3PIN_DIODE")(type "Legacy")(uri "${KIPRJMOD}/lib/3PIN_DIODE.lib")(options "")(descr ""))
+  (lib (name "MCU_ST_STM32F4")(type "Legacy")(uri "${KIPRJMOD}/lib/MCU_ST_STM32F4.lib")(options "")(descr ""))
 )

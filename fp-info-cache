@@ -1,4 +1,4 @@
-16694320422911832
+16695892263055832
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin{space}Battery{space}Holder,{space}BX0036,{space}Battery{space}Type{space}C{space}(https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74364,6 +74364,13 @@ Varistor
 RV_Disc_D21.5mm_W11.4mm_P10mm
 Varistor,{space}diameter{space}21.5mm,{space}width{space}11.4mm,{space}pitch{space}10mm
 varistor{space}SIOV
+0
+2
+2
+rise_elp
+OMNI-220-18-50-2C
+
+
 0
 2
 2

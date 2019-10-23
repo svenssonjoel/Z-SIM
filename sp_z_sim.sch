@@ -161,10 +161,6 @@ F 3 "~" H 1400 1900 50  0001 C CNN
 	1    1250 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 1950 1550 1950
-Wire Wire Line
-	1550 2050 3100 2050
 $Comp
 L power:GND #PWR01
 U 1 1 5DB289E5
@@ -917,4 +913,34 @@ Wire Wire Line
 	10450 1600 10250 1600
 Text Notes 7300 4900 0    50   ~ 0
 SD Card for logging,\nsample buffering, etc.
+$Comp
+L Device:R_Small R35
+U 1 1 5DB9CDE0
+P 1800 1950
+F 0 "R35" V 2000 1950 50  0000 C CNN
+F 1 "22R" V 1900 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 1950 50  0001 C CNN
+F 3 "~" H 1800 1950 50  0001 C CNN
+	1    1800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 5DB9E98E
+P 1800 2050
+F 0 "R36" V 1600 2050 50  0000 C CNN
+F 1 "22R" V 1700 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 2050 50  0001 C CNN
+F 3 "~" H 1800 2050 50  0001 C CNN
+	1    1800 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1950 1700 1950
+Wire Wire Line
+	1700 2050 1550 2050
+Wire Wire Line
+	1900 1950 3100 1950
+Wire Wire Line
+	3100 2050 1900 2050
 $EndSCHEMATC

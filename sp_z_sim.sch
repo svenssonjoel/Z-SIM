@@ -739,17 +739,17 @@ PWR_IN
 $Comp
 L Device:CP_Small C4
 U 1 1 5D9EE9D3
-P 10150 1700
-F 0 "C4" H 10238 1746 50  0000 L CNN
-F 1 "100u" H 10238 1655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10150 1700 50  0001 C CNN
-F 3 "~" H 10150 1700 50  0001 C CNN
-F 4 "https://www.digikey.se/product-detail/en/nichicon/URS1J101MPD1TD/493-11829-1-ND/4320229" H 10150 1700 50  0001 C CNN "digikey"
-	1    10150 1700
+P 9850 1700
+F 0 "C4" H 9938 1746 50  0000 L CNN
+F 1 "100u" H 9938 1655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9850 1700 50  0001 C CNN
+F 3 "~" H 9850 1700 50  0001 C CNN
+F 4 "https://www.digikey.se/product-detail/en/nichicon/URS1J101MPD1TD/493-11829-1-ND/4320229" H 9850 1700 50  0001 C CNN "digikey"
+	1    9850 1700
 	-1   0    0    -1  
 $EndComp
-Connection ~ 10150 1800
-Connection ~ 10150 1600
+Connection ~ 9850 1800
+Connection ~ 9850 1600
 $Comp
 L power:GND #PWR013
 U 1 1 5D9D56FA
@@ -766,7 +766,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 1600 10350 1600
 Wire Wire Line
-	10550 1800 10150 1800
+	10550 1800 10200 1800
 $Comp
 L power:+3.3VA #PWR0102
 U 1 1 5DB50ED3
@@ -890,7 +890,7 @@ Wire Wire Line
 	10350 1450 10350 1600
 Connection ~ 10350 1600
 Wire Wire Line
-	10350 1600 10150 1600
+	10350 1600 10200 1600
 Text Notes 7300 4900 0    50   ~ 0
 SD Card for logging,\nsample buffering, etc.
 $Comp
@@ -924,9 +924,9 @@ Wire Wire Line
 Wire Wire Line
 	3100 2050 1900 2050
 Wire Wire Line
-	9500 1600 10150 1600
+	9500 1600 9850 1600
 Wire Wire Line
-	9500 1800 10150 1800
+	9500 1800 9850 1800
 $Comp
 L power:+3.3VA #PWR036
 U 1 1 5DB45B95
@@ -1091,4 +1091,22 @@ F 3 "~" H 9250 5950 50  0001 C CNN
 	1    9250 5950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP_Small C28
+U 1 1 5DC02D42
+P 10200 1700
+F 0 "C28" H 10288 1746 50  0000 L CNN
+F 1 "100u" H 10288 1655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10200 1700 50  0001 C CNN
+F 3 "~" H 10200 1700 50  0001 C CNN
+F 4 "https://www.digikey.se/product-detail/en/nichicon/URS1J101MPD1TD/493-11829-1-ND/4320229" H 10200 1700 50  0001 C CNN "digikey"
+	1    10200 1700
+	-1   0    0    -1  
+$EndComp
+Connection ~ 10200 1600
+Wire Wire Line
+	10200 1600 9850 1600
+Connection ~ 10200 1800
+Wire Wire Line
+	10200 1800 9850 1800
 $EndSCHEMATC

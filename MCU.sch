@@ -521,7 +521,28 @@ F 3 "" H 6750 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1200 5550 1200
+	4800 1200 5000 1200
 Text HLabel 6450 4500 2    50   Input ~ 0
 PB8_FAN
+$Comp
+L Device:C_Small C5
+U 1 1 5DBFF881
+P 5000 1400
+F 0 "C5" V 4950 1600 50  0000 C CNN
+F 1 "2.2u" V 5050 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5000 1400 50  0001 C CNN
+F 3 "~" H 5000 1400 50  0001 C CNN
+	1    5000 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1300 5000 1200
+Connection ~ 5000 1200
+Wire Wire Line
+	5000 1200 5550 1200
+Wire Wire Line
+	5000 1500 5000 1700
+Wire Wire Line
+	5000 1700 4800 1700
+Connection ~ 4800 1700
 $EndSCHEMATC

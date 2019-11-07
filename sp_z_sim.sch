@@ -960,53 +960,29 @@ Wire Wire Line
 $Comp
 L power:+3.3VA #PWR036
 U 1 1 5DB45B95
-P 9800 4500
-F 0 "#PWR036" H 9950 4500 50  0001 C CNN
-F 1 "+3.3VA" H 9627 4515 50  0000 C CNN
-F 2 "" H 9800 4500 50  0001 C CNN
-F 3 "" H 9800 4500 50  0001 C CNN
-	1    9800 4500
+P 9800 4350
+F 0 "#PWR036" H 9950 4350 50  0001 C CNN
+F 1 "+3.3VA" H 9627 4365 50  0000 C CNN
+F 2 "" H 9800 4350 50  0001 C CNN
+F 3 "" H 9800 4350 50  0001 C CNN
+	1    9800 4350
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR038
 U 1 1 5DB46A69
-P 9800 4650
-F 0 "#PWR038" H 9800 4400 50  0001 C CNN
-F 1 "GND" V 9805 4522 50  0000 R CNN
-F 2 "" H 9800 4650 50  0001 C CNN
-F 3 "" H 9800 4650 50  0001 C CNN
-	1    9800 4650
+P 9800 4450
+F 0 "#PWR038" H 9800 4200 50  0001 C CNN
+F 1 "GND" V 9805 4322 50  0000 R CNN
+F 2 "" H 9800 4450 50  0001 C CNN
+F 3 "" H 9800 4450 50  0001 C CNN
+	1    9800 4450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x01_Male J13
-U 1 1 5DB475B5
-P 9350 4500
-F 0 "J13" H 9450 4600 50  0000 C CNN
-F 1 "CAL_3.3" H 9200 4500 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_3.0x3.0mm" H 9350 4500 50  0001 C CNN
-F 3 "~" H 9350 4500 50  0001 C CNN
-F 4 "n/a" H 9350 4500 50  0001 C CNN "OrderN"
-	1    9350 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J14
-U 1 1 5DB47B33
-P 9350 4650
-F 0 "J14" H 9450 4550 50  0000 C CNN
-F 1 "CAL_3.3" H 9200 4650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_3.0x3.0mm" H 9350 4650 50  0001 C CNN
-F 3 "~" H 9350 4650 50  0001 C CNN
-F 4 "n/a" H 9350 4650 50  0001 C CNN "OrderN"
-	1    9350 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9550 4500 9800 4500
+	9550 4350 9800 4350
 Wire Wire Line
-	9800 4650 9550 4650
+	9800 4450 9550 4450
 $Comp
 L Device:Q_NMOS_GSD Q6
 U 1 1 5DB539FD
@@ -1094,20 +1070,8 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5DB5F2C6
-P 9250 5550
-F 0 "H1" H 9350 5596 50  0000 L CNN
-F 1 "MountingHole" H 9350 5505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 5550 50  0001 C CNN
-F 3 "~" H 9250 5550 50  0001 C CNN
-F 4 "n/a" H 9250 5550 50  0001 C CNN "OrderN"
-	1    9250 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5DB60163
 P 9250 5750
-F 0 "H2" H 9350 5796 50  0000 L CNN
+F 0 "H1" H 9350 5796 50  0000 L CNN
 F 1 "MountingHole" H 9350 5705 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 5750 50  0001 C CNN
 F 3 "~" H 9250 5750 50  0001 C CNN
@@ -1116,15 +1080,27 @@ F 4 "n/a" H 9250 5750 50  0001 C CNN "OrderN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5DB6057C
+L Mechanical:MountingHole H2
+U 1 1 5DB60163
 P 9250 5950
-F 0 "H3" H 9350 5996 50  0000 L CNN
+F 0 "H2" H 9350 5996 50  0000 L CNN
 F 1 "MountingHole" H 9350 5905 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 5950 50  0001 C CNN
 F 3 "~" H 9250 5950 50  0001 C CNN
 F 4 "n/a" H 9250 5950 50  0001 C CNN "OrderN"
 	1    9250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DB6057C
+P 9250 6150
+F 0 "H3" H 9350 6196 50  0000 L CNN
+F 1 "MountingHole" H 9350 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 6150 50  0001 C CNN
+F 3 "~" H 9250 6150 50  0001 C CNN
+F 4 "n/a" H 9250 6150 50  0001 C CNN "OrderN"
+	1    9250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1146,4 +1122,66 @@ Wire Wire Line
 Connection ~ 10200 1800
 Wire Wire Line
 	10200 1800 9850 1800
+Text Label 4500 1950 0    50   ~ 0
+TP_DAC1
+Text Label 4500 2050 0    50   ~ 0
+TP_DAC2
+Text Label 9550 4900 0    50   ~ 0
+TP_DAC2
+Text Label 9550 4800 0    50   ~ 0
+TP_DAC1
+$Comp
+L Connector:Conn_01x02_Male J13
+U 1 1 5DC55E05
+P 9350 4350
+F 0 "J13" H 9458 4531 50  0000 C CNN
+F 1 "CAL_3.3" V 9250 4300 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9350 4350 50  0001 C CNN
+F 3 "~" H 9350 4350 50  0001 C CNN
+F 4 "455-1704-ND" H 9350 4350 50  0001 C CNN "OrderN"
+	1    9350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J14
+U 1 1 5DC57413
+P 9350 4800
+F 0 "J14" H 9450 4950 50  0000 C CNN
+F 1 "TP_DAC" V 9250 4750 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9350 4800 50  0001 C CNN
+F 3 "~" H 9350 4800 50  0001 C CNN
+F 4 "455-1704-ND" H 9350 4800 50  0001 C CNN "OrderN"
+	1    9350 4800
+	1    0    0    -1  
+$EndComp
+Text Label 4500 2150 0    50   ~ 0
+TP_I1
+Text Label 4500 2250 0    50   ~ 0
+TP_I2
+Text Label 9550 5200 0    50   ~ 0
+TP_I1
+Text Label 9550 5300 0    50   ~ 0
+TP_I2
+$Comp
+L Connector:Conn_01x03_Male J16
+U 1 1 5DC72E50
+P 9350 5300
+F 0 "J16" H 9450 5500 50  0000 C CNN
+F 1 "TP_AMP" V 9250 5300 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 9350 5300 50  0001 C CNN
+F 3 "~" H 9350 5300 50  0001 C CNN
+	1    9350 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC40DCD
+P 9550 5400
+F 0 "#PWR?" H 9550 5150 50  0001 C CNN
+F 1 "GND" V 9555 5272 50  0000 R CNN
+F 2 "" H 9550 5400 50  0001 C CNN
+F 3 "" H 9550 5400 50  0001 C CNN
+	1    9550 5400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -516,6 +516,7 @@ F 0 "U2" V 3704 4244 50  0000 L CNN
 F 1 "INA240A1PW" V 3795 4244 50  0000 L CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3750 3250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 3900 4050 50  0001 C CNN
+F 4 " 296-45088-2-ND" H 3750 3900 50  0001 C CNN "OrderN"
 	1    3750 3900
 	0    1    1    0   
 $EndComp
@@ -527,6 +528,7 @@ F 0 "U4" V 9354 3744 50  0000 L CNN
 F 1 "INA240A1PW" V 9445 3744 50  0000 L CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 9400 2750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina240.pdf" H 9550 3550 50  0001 C CNN
+F 4 " 296-45088-2-ND" H 9400 3400 50  0001 C CNN "OrderN"
 	1    9400 3400
 	0    1    1    0   
 $EndComp

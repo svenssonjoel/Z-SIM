@@ -1,0 +1,3 @@
+[submodule "firmware/LispBM"]
+	path = firmware/LispBM
+	url = https://github.com/svenssonjoel/LispBM

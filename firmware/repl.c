@@ -22,6 +22,7 @@
 #include "chprintf.h"
 
 #include "led.h"
+#include "dcdc.h" 
 
 #include "heap.h"
 #include "symrepr.h"
@@ -45,6 +46,43 @@ VALUE ext_set_led(VALUE *args, int argn) {
 
   return enc_sym(symrepr_true());
 }
+
+VALUE ext_dcdc_enable(VALUE *args, int argn) {
+  // ignores all arguments 
+  (void) args;
+  (void) argn; 
+
+  bool res = dcdc_enable();
+
+  if (res) return enc_sym(symrepr_true());
+  return enc_sym(symrepr_nil());
+}
+
+VALUE ext_dcdc_disable(VALUE *args, int argn) {
+  // ignores all arguments
+  (void) args;
+  (void) argn; 
+  
+  dcdc_disable(); 
+
+  return enc_sym(symrepr_true());
+}
+
+VALUE ext_vsel_set(VALUE *args, int argn) {
+  if (argn != 1) {
+    return enc_sym(symrepr_nil());
+  }
+  
+  int vsel = dec_i(args[0]);
+
+  if (vsel < 0) return enc_sym(symrepr_nil());
+
+  bool res = dcdc_vsel_set((unsigned int) vsel);
+
+  if (res) return enc_sym(symrepr_true());
+  return enc_sym(symrepr_nil());
+}
+
 
 unsigned char inbyte(BaseSequentialStream *chp) {
   unsigned char c;
@@ -132,6 +170,26 @@ static THD_FUNCTION(repl, arg) {
   } else {
     chprintf(chp,"set-led extension failed!\n\r");
   }
+
+  if (extensions_add("dcdc-enable",  ext_dcdc_enable)) {
+    chprintf(chp,"dcdc-enable extension added.\n\r");
+  } else {
+    chprintf(chp,"dcdc-enable extension failed!\n\r");
+  }
+
+  if (extensions_add("dcdc-disable",  ext_dcdc_disable)) {
+    chprintf(chp,"dcdc-disable extension added.\n\r");
+  } else {
+    chprintf(chp,"dcdc-disable extension failed!\n\r");
+  }
+
+
+  if (extensions_add("vsel-set",  ext_vsel_set)) {
+    chprintf(chp,"vsel-set extension added.\n\r");
+  } else {
+    chprintf(chp,"vsel-set extension failed!\n\r");
+  }
+
 
   VALUE prelude = prelude_load();
   eval_cps_program(prelude);

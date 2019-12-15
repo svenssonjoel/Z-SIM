@@ -35,6 +35,7 @@ int main(void) {
   halInit();
   chSysInit();
 
+  dcdc_init();
   led_init();
 
 	

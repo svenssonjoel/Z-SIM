@@ -194,7 +194,7 @@ static THD_FUNCTION(repl, arg) {
   VALUE prelude = prelude_load();
   eval_cps_program(prelude);
 
-  chprintf(chp,"Lisp REPL started (FMRC)!\n\r");
+  chprintf(chp,"Lisp REPL started (Z-SIM)!\n\r");
 
   while (1) {
     chThdSleepMilliseconds(100);
@@ -205,7 +205,7 @@ static THD_FUNCTION(repl, arg) {
     chprintf(chp,"\n\r");
 
     if (strncmp(str, ":info", 5) == 0) {
-      chprintf(chp,"##(FMRC)####################################################\n\r");
+      chprintf(chp,"##(Z-SIM)####################################################\n\r");
       chprintf(chp,"Used cons cells: %lu \n\r", heap_size - heap_num_free());
       chprintf(chp,"ENV: "); simple_snprint(outbuf,1023, eval_cps_get_env()); chprintf(chp, "%s \n\r", outbuf);
       heap_get_state(&heap_state);
